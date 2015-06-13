@@ -4,12 +4,22 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="popstas-bira"
+ZSH_THEME="bira"
 
 export UPDATE_ZSH_DAYS=30
 
 # For Solarized
 export TERM="xterm-256color"
+
+# home & end keys work
+bindkey '\e[1~' beginning-of-line
+bindkey '\e[4~' end-of-line
+
+# time in right of promt
+RPROMPT=' [%*]'
+
+# default editor
+export EDITOR="mcedit"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
