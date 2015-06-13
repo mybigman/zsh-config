@@ -8,6 +8,9 @@ ZSH_THEME="popstas-bira"
 
 export UPDATE_ZSH_DAYS=30
 
+# For Solarized
+export TERM="xterm-256color"
+
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
 
@@ -28,7 +31,7 @@ export UPDATE_ZSH_DAYS=30
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git debian pip zzz-custom docker zsh_reload drs drall vagrant)
+plugins=(cp command-not-found debian docker git-extras gnu-utils history pip python vagrant zsh_reload zzz-custom drall drs)
 
 # User configuration
 

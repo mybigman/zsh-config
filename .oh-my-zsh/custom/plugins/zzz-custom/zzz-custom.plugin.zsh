@@ -13,7 +13,7 @@ bindkey '\e[1~' beginning-of-line
 bindkey '\e[4~' end-of-line 
 
 # jenkins
-alias jenkins='java -jar /usr/local/bin/jenkins-cli.jar -s http://localhost:8080'
+#alias jenkins='java -jar /usr/local/bin/jenkins-cli.jar -s http://localhost:8080'
 
 # time in right of promt
 RPROMPT=' [%*]'
@@ -21,7 +21,4 @@ RPROMPT=' [%*]'
 # default editor
 export EDITOR="mcedit"
 
-. /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
-
-bindkey '\e[1~' beginning-of-line
-bindkey '\e[4~' end-of-line
+#. /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
