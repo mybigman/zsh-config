@@ -10,3 +10,6 @@ rm ~/.zshrc
 ln -s /etc/zsh-config/.zshrc ~/.zshrc
 chsh -s /bin/zsh $(whoami)
 ```
+
+# Features
+- awesome history search and grep (need to pip install [percol](https://github.com/mooz/percol))
