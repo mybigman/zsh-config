@@ -2,6 +2,7 @@
 My zsh config with oh-my-zsh.
 All config moved to .zshrc, .oh-my-zsh not used now.
 
+
 # Install
 ```
 git clone https://github.com/robbyrussell/oh-my-zsh.git /usr/share/oh-my-zsh
