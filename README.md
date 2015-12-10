@@ -14,3 +14,11 @@ chsh -s /bin/zsh $(whoami)
 
 # Features
 - awesome history search and grep (need to pip install [percol](https://github.com/mooz/percol))
+
+# Plugin features
+#### debian
+- `ai` - (sudo) aptitude install
+#### fancy-ctrl-z
+- `Ctrl+Z` in Vim to execute command and `Ctrl+Z` again to back into Vim
+#### thefuck
+- `Esc Esc` - fuck

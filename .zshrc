@@ -28,7 +28,7 @@ COMPLETION_WAITING_DOTS="true"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(cp command-not-found debian docker git-extras gnu-utils history pip python vagrant zsh_reload zzz-custom drall drs)
+plugins=(command-not-found common-aliases debian docker docker-compose fancy-ctrl-z git-extras gnu-utils history pip python rake thefuck vagrant zsh_reload zzz-custom drall drs)
 
 # User configuration
 
@@ -37,22 +37,27 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 source $ZSH/oh-my-zsh.sh
 
 # percol awesome history search
+# g conflicts with zsh plugin 'git'
 function exists { which $1 &> /dev/null }
 if exists percol; then
-    function percol_select_history() {
-        local tac
-        exists gtac && tac="gtac" || { exists tac && tac="tac" || { tac="tail -r" } }
-        BUFFER=$(fc -l -n 1 | eval $tac | percol --query "$LBUFFER")
-        CURSOR=$#BUFFER         # move cursor
-        zle -R -c               # refresh
-    }
+	function percol_select_history() {
+		local tac
+		exists gtac && tac="gtac" || { exists tac && tac="tac" || { tac="tail -r" } }
+		BUFFER=$(fc -l -n 1 | eval $tac | percol --query "$LBUFFER")
+		CURSOR=$#BUFFER         # move cursor
+		zle -R -c               # refresh
+	}
 
-    zle -N percol_select_history
-    bindkey '^R' percol_select_history
+	zle -N percol_select_history
+	bindkey '^R' percol_select_history
 
 	# percol based grep
 	g() { percol --match-method regex --query="$*"; }
 fi
 
+if exists powerline; then
+	source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
+fi
 
-source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
+[[ -r /etc/zsh/zshrc.local ]] && source /etc/zsh/zshrc.local
+[[ -r "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
