@@ -28,7 +28,7 @@ COMPLETION_WAITING_DOTS="true"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(command-not-found common-aliases debian docker docker-compose fancy-ctrl-z git-extras gnu-utils history pip python rake thefuck vagrant zsh_reload zzz-custom drall drs)
+plugins=(command-not-found common-aliases debian docker docker-compose fancy-ctrl-z git-extras gnu-utils history pip python rake vagrant zsh_reload drall drs)
 
 # User configuration
 
