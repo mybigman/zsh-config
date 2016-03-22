@@ -20,7 +20,7 @@ bindkey '\e[4~' end-of-line
 RPROMPT=' [%*]'
 
 # default editor
-# export EDITOR="vim"
+export EDITOR="mc"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
