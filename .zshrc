@@ -29,7 +29,8 @@ COMPLETION_WAITING_DOTS="true"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(command-not-found common-aliases debian docker docker-compose fancy-ctrl-z git-extras gnu-utils history jump percol pip python rake tmux vagrant zsh_reload drall drs)
+plugins=(command-not-found debian docker docker-compose fancy-ctrl-z git-extras gnu-utils history jump percol pip python rake tmux vagrant zsh_reload drall drs)
+# plugin common-aliases breaks execution of php scripts with shebang, why?
 
 # User configuration
 
