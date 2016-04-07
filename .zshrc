@@ -20,7 +20,7 @@ bindkey '\e[4~' end-of-line
 RPROMPT=' [%*]'
 
 # default editor
-export EDITOR="mc"
+export EDITOR="mcedit"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
