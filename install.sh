@@ -10,13 +10,13 @@ if [ ! -d /etc/zsh-config ]; then
 
 	if [ -e "$HOME/.zshrc" ]; then
 		mv "$HOME/.zshrc" "$HOME/.zshrc.bak"
-		ln -s /etc/zsh-config/.zshrc ~/.zshrc
 	fi
+	ln -s /etc/zsh-config/.zshrc ~/.zshrc
 
 	if [ -e "$HOME/.oh-my-zsh" ]; then
 		mv "$HOME/.oh-my-zsh" "$HOME/.oh-my-zsh.bak"
-		ln -s /etc/zsh-config/.oh-my-zsh ~/.oh-my-zsh
 	fi
+	ln -s /etc/zsh-config/.oh-my-zsh ~/.oh-my-zsh
 fi
 
 if [ ! -d /usr/share/zsh-syntax-highlighting ]; then
