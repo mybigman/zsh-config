@@ -12,7 +12,7 @@ It removes your `~/.zshrc` to `~/.zshrc.bak` and changes your default shell to `
 Installs into /etc/zsh-config and /usr/share/oh-my-zsh, need sudo privileges.
 
 ```
-sh -c "$(curl -fsSL https://raw.github.com/popstas/zsh-config/master/install.sh)"
+bash -c "$(curl -fsSL https://raw.github.com/popstas/zsh-config/master/install.sh)"
 ```
 
 # Features
