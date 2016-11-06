@@ -26,10 +26,11 @@ export EDITOR="mcedit"
 COMPLETION_WAITING_DOTS="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=$HOME/.oh-my-zsh/custom
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(command-not-found debian docker docker-compose fancy-ctrl-z git-extras gnu-utils history jump percol pip python rake tmux vagrant zsh_reload drall drs)
+plugins=(command-not-found debian docker docker-compose fancy-ctrl-z git-extras gnu-utils history jump percol pip python tmux vagrant zsh_reload)
+# custom plugins: drall drs
 # plugin common-aliases breaks execution of php scripts with shebang, why?
 
 # User configuration
