@@ -23,5 +23,5 @@ if [ ! -d /usr/share/zsh-syntax-highlighting ]; then
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/share/zsh-syntax-highlighting
 fi
 
-pip install percol powerline-status thefuck
+pip install percol powerline-status
 chsh -s /bin/zsh $(whoami)

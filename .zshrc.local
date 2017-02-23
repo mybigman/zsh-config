@@ -2,6 +2,3 @@ export GOPATH="$HOME/projects/go"
 export PATH="$PATH:$GOPATH/bin"
 export EDITOR="vim"
 alias tm='tmux attach || tmux'
-if [ -d /usr/share/zsh-syntax-highlighting ]; then
-	source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
