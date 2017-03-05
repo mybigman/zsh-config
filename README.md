@@ -1,6 +1,8 @@
 # zsh-config
 My zsh config with oh-my-zsh.
 
+Repository will don't update ever, please, use ansible role [viasite-ansible.zsh](https://github.com/viasite-ansible/ansible-role-zsh)
+
 
 # Requirements
 - git
